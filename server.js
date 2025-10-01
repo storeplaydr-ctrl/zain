@@ -82,9 +82,9 @@ io.on('connection', (socket) => {
 });
 
 // API Routes
-app.use('/api/auth', require('./src/routes/auth'));
-app.use('/api/learning-path', require('./src/routes/learningPath'));
-app.use('/api/chat', require('./src/routes/chat'));
+app.use('/api/auth', require('./src/routes/auth.js'));
+app.use('/api/learning-path', require('./src/routes/learningPath.js'));
+app.use('/api/chat', require('./src/routes/chat.js'));
 
 // Health check for Render
 app.get('/healthz', (req, res) => {
